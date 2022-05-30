@@ -111,6 +111,10 @@ body{
     .img{
         height: 170px;
         padding: 1% 1% 1% 1%;
+        transition: height 1s;
+    }
+    .img:hover{
+        height: 190px;
     }
     .iframe{
         height: 85px;
@@ -171,7 +175,12 @@ body{
     .abImg{
         width: 80%;
         padding-top: 5px;
+        transition: width 1s;
     }
+    .abImg:hover{
+        width: 85%;
+    }
+
     #mediaSecc3{
         display: flex;
         flex-wrap: wrap;
@@ -344,6 +353,10 @@ body{
     .img{
         height: 170px;
         padding: 4% 1% 1% 1%;
+        transition: height 1s;
+    }
+    .img:hover{
+        height: 190px;
     }
     .iframe{
         height: 85px;
@@ -403,6 +416,10 @@ body{
     .abImg{
         width: 80%;
         padding-top: 5px;
+        transition: width 1s;
+    }
+    .abImg:hover{
+        width: 85%;
     }
     #mediaSecc3{
         display: flex;
@@ -579,6 +596,10 @@ body{
     .img{
         width: 38%;
         padding: 0% 1%;
+        transition: width 1s;
+    }
+    .img:hover{
+        width: 40%;
     }
     .iframe{
         height: 85px;
@@ -638,6 +659,10 @@ body{
     .abImg{
         width: 80%;
         padding-top: 5px;
+        transition: width 1s;
+    }
+    .abImg:hover{
+        width: 85%;
     }
     #mediaSecc3{
         display: flex;
@@ -815,6 +840,10 @@ body{
     .img{
         width: 42%;
         padding: 0% 1%;
+        transition: width 1s;
+    }
+    .img:hover{
+        width: 45%;
     }
     .iframe{
         height: 85px;
@@ -874,6 +903,10 @@ body{
     .abImg{
         width: 80%;
         padding-top: 5px;
+        transition: width 1s;
+    }
+    .abImg:hover{
+        width: 85%;
     }
     #mediaSecc3{
         display: flex;
@@ -1055,6 +1088,10 @@ body{
     .img{
         width: 42%;
         padding: 0% 1%;
+        transition: width 1s;
+    }
+    .img:hover{
+        width: 45%;
     }
     .iframe{
         width: 400px;
@@ -1115,6 +1152,10 @@ body{
     .abImg{
         width: 80%;
         padding-top: 5px;
+        transition: width 1s;
+    }
+    .abImg:hover{
+        width: 85%;
     }
     #mediaSecc3{
         display: flex;
