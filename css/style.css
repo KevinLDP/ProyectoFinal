@@ -10,12 +10,12 @@ body{
     
     
     .body1{
-        background-image: url("./Img/BGMobile.png");
+        background-image: url("../Img/BGMobile.png");
         margin: 0px;
         background-size: 100%;
     }
     .body2{
-        background-image: url("./Img/background2.jpg");
+        background-image: url("../Img/background2.jpg");
         margin: 0px;
         background-size: 300%;
     }
@@ -69,6 +69,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 5px 20px 10px 20px;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
     }
     .navUl{
         color:  white;
@@ -81,6 +89,9 @@ body{
     .navLi a{
         color: white;
         text-decoration: none;
+    }
+    .navLi a:Hover{
+        color: rgb(0, 183, 199);
     }
     .logo1{
         padding-top: 6px;
@@ -95,12 +106,21 @@ body{
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     /* termina estilo nav */
 
     /* Comeinza estilo sección imagenes */
     .imgSec{
         grid-area: img;
+        padding: 0% 4%;
     }
     .imgDiv{
         display: flex;
@@ -108,16 +128,9 @@ body{
         justify-content: center;
         align-content: center;
     }
-    .img{
-        height: 170px;
-        padding: 1% 1% 1% 1%;
-        transition: height 1s;
-    }
-    .img:hover{
-        height: 190px;
-    }
     .iframe{
-        height: 85px;
+        height: 95px;
+        width: 70%;
         padding: 4% 0 1% 0;
     }
     /* Termina estilo sección imagenes */
@@ -229,6 +242,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 10px 10% 10px 10%;
+        animation-name: footer_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes footer_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     .logo{
         height: 23px;
@@ -252,12 +273,12 @@ body{
 @media screen and (min-width:426px) and (max-width:768px){
  
     .body1{
-        background-image: url("./Img/BGMobile.png");
+        background-image: url("../Img/BGMobile.png");
         margin: 0px;
         background-size: 100%;
     }
     .body2{
-        background-image: url("./Img/background2.jpg");
+        background-image: url("../Img/background2.jpg");
         margin: 0px;
         background-size: 200%;
     }
@@ -267,7 +288,7 @@ body{
                              "img"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 83px 350px 48px;
+        grid-template-rows: 83px 630px 48px;
     }
     #padreEvents{
         display: grid;
@@ -312,6 +333,14 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 10px 80px 10px 80px;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
     }
     .navUl{
         color:  white;
@@ -324,6 +353,9 @@ body{
     .navLi a{
         color: white;
         text-decoration: none;
+    }
+    .navLi a:Hover{
+        color: rgb(0, 183, 199);
     }
     .logo1{
         padding-top: 6px;
@@ -338,30 +370,34 @@ body{
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     /* termina estilo nav */
 
     /* Comeinza estilo sección imagenes */
     .imgSec{
         grid-area: img;
+        padding: 0% 4%;
     }
     .imgDiv{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .img{
-        height: 170px;
-        padding: 4% 1% 1% 1%;
-        transition: height 1s;
-    }
-    .img:hover{
-        height: 190px;
+        align-content: center;
     }
     .iframe{
-        height: 85px;
-        padding: 2% 0 1% 0;
+        height: 150px;
+        width: 70%;
+        padding: 4% 0 1% 0;
     }
+
     /* Termina estilo sección imagenes */
 
     /* Comienza estilo Tabla */
@@ -468,6 +504,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 10px 10% 10px 10%;
+        animation-name: footer_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes footer_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     .logo{
         height: 23px;
@@ -490,12 +534,12 @@ body{
 @media screen and (min-width:769px) and (max-width: 1439px){
     
     .body1{
-        background-image: url("./Img/BGMobile.png");
+        background-image: url("../Img/BGMobile.png");
         margin: 0px;
         background-size: 100%;
     }
     .body2{
-        background-image: url("./Img/background2.jpg");
+        background-image: url("../Img/background2.jpg");
         margin: 0px;
         background-size: 100%;
     }
@@ -505,7 +549,7 @@ body{
                              "img"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 115px 380px 48px;
+        grid-template-rows: 115px 800px 48px;
     }
     #padreEvents{
         display: grid;
@@ -550,6 +594,14 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 1% 10% 10px 10%;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
     }
     .navUl{
         color:  white;
@@ -563,6 +615,9 @@ body{
     .navLi a{
         color: white;
         text-decoration: none;
+    }
+    .navLi a:Hover{
+        color: rgb(0, 183, 199);
     }
     .logo1{
         padding-top: 6px;
@@ -581,29 +636,32 @@ body{
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     /* termina estilo nav */
 
     /* Comeinza estilo sección imagenes */
     .imgSec{
         grid-area: img;
+        padding: 0% 4%;
     }
     .imgDiv{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .img{
-        width: 38%;
-        padding: 0% 1%;
-        transition: width 1s;
-    }
-    .img:hover{
-        width: 40%;
+        align-content: center;
     }
     .iframe{
-        height: 85px;
-        padding: 2% 0 1% 0;
+        height: 170px;
+        width: 70%;
+        padding: 4% 0 1% 0;
     }
     /* Termina estilo sección imagenes */
 
@@ -711,6 +769,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 10px 10% 10px 10%;
+        animation-name: footer_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes footer_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     .logo{
         height: 30px;
@@ -734,12 +800,12 @@ body{
 @media screen and (min-width:1440px) and (max-width: 2559px){
     
     .body1{
-        background-image: url("./Img/BGMobile.png");
+        background-image: url("../Img/BGMobile.png");
         margin: 0px;
         background-size: 100%;
     }
     .body2{
-        background-image: url("./Img/background2.jpg");
+        background-image: url("../Img/background2.jpg");
         margin: 0px;
         background-size: 100%;
     }
@@ -749,7 +815,7 @@ body{
                              "img"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 25% 80% 48px;
+        grid-template-rows: 12% 88% 48px;
     }
     #padreEvents{
         display: grid;
@@ -794,6 +860,14 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 1% 10% 10px 10%;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
     }
     .navUl{
         color:  white;
@@ -807,6 +881,9 @@ body{
     .navLi a{
         color: white;
         text-decoration: none;
+    }
+    .navLi a:Hover{
+        color: rgb(0, 183, 199);
     }
     .logo1{
         padding-top: 6px;
@@ -825,29 +902,32 @@ body{
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     /* termina estilo nav */
 
     /* Comeinza estilo sección imagenes */
     .imgSec{
         grid-area: img;
+        padding: 0% 4%;
     }
     .imgDiv{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .img{
-        width: 42%;
-        padding: 0% 1%;
-        transition: width 1s;
-    }
-    .img:hover{
-        width: 45%;
+        align-content: center;
     }
     .iframe{
-        height: 85px;
-        padding: 3% 0 1% 0;
+        height: 160px;
+        width: 70%;
+        padding: 2% 0 1% 0;
     }
     /* Termina estilo sección imagenes */
 
@@ -956,6 +1036,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 10px 10% 10px 10%;
+        animation-name: footer_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes footer_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     .logo{
         height: 40px;
@@ -982,12 +1070,12 @@ body{
 @media screen and (min-width:2560px){
     
     .body1{
-        background-image: url("./Img/BGMobile.png");
+        background-image: url("../Img/BGMobile.png");
         margin: 0px;
         background-size: 100%;
     }
     .body2{
-        background-image: url("./Img/background2.jpg");
+        background-image: url("../Img/background2.jpg");
         margin: 0px;
         background-size: 100%;
     }
@@ -997,7 +1085,7 @@ body{
                              "img"
                              "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 260px 1000px 48px;
+        grid-template-rows: 260px 1900px 48px;
     }
     #padreEvents{
         display: grid;
@@ -1042,6 +1130,14 @@ body{
         justify-content: space-between;
         align-items: center;
         padding: 1% 10% 10px 10%;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
     }
     .navUl{
         color:  white;
@@ -1055,6 +1151,9 @@ body{
     .navLi a{
         color: white;
         text-decoration: none;
+    }
+    .navLi a:Hover{
+        color: rgb(0, 183, 199);
     }
     .logo1{
         padding-top: 6px;
@@ -1073,30 +1172,32 @@ body{
         padding-left: 5%;
         padding-right: 5%;
         width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     /* termina estilo nav */
 
     /* Comeinza estilo sección imagenes */
     .imgSec{
         grid-area: img;
+        padding: 0% 4%;
     }
     .imgDiv{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .img{
-        width: 42%;
-        padding: 0% 1%;
-        transition: width 1s;
-    }
-    .img:hover{
-        width: 45%;
+        align-content: center;
     }
     .iframe{
-        width: 400px;
-        height: 200px;
-        padding: 3% 0 1% 0;
+        height: 230px;
+        width: 70%;
+        padding: 4% 0 1% 0;
     }
     /* Termina estilo sección imagenes */
 
@@ -1206,6 +1307,14 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 10px 10% 10px 10%;
+        animation-name: footer_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes footer_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
     }
     .logo{
         height: 60px;
