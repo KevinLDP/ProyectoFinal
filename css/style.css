@@ -1,1331 +1,1018 @@
-body{
+@media screen and (max-width: 426px) {
+  body {
     color: white;
     font-weight: lighter;
-    font-family: 'Anton', sans-serif;
-}
-
-
-/* Estilo Celular */
-@media screen and (max-width:426px){
-    
-    
-    .body1{
-        background-image: url("../Img/BGMobile.png");
-        margin: 0px;
-        background-size: 100%;
-    }
-    .body2{
-        background-image: url("../Img/background2.jpg");
-        margin: 0px;
-        background-size: 300%;
-    }
-    #padreHome{
-        display: grid;
-        grid-template-areas: "header"
-                             "img"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 470px 48px;
-    }
-    #padreEvents{
-        display: grid;
-        grid-template-areas: "header"
-                             "tabla"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 470px 48px;
-    }
-    #padreMedia{
-        display: grid;
-        grid-template-areas: "header"
-                             "media"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 490px 48px;
-    }
-    #padreAbout{
-        display: grid;
-        grid-template-areas: "header"
-                             "about"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 1500px 48px;
-    }
-    #padreContact{
-        display: grid;
-        grid-template-areas: "header"
-                             "form"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 470px 48px;
-    }
-
-    /* inicia estilo nav */
-    header{
-        grid-area: header;
-    }
-    .navbar{
-        grid-area: nav;
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 20px 10px 20px;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
-    }
-    .navUl{
-        color:  white;
-        display: inline-block;
-    }
-    .navLi{
-        display: inline-block;
-        font-size: 12px;
-    }
-    .navLi a{
-        color: white;
-        text-decoration: none;
-    }
-    .navLi a:Hover{
-        color: rgb(0, 183, 199);
-    }
-    .logo1{
-        padding-top: 6px;
-        width: 56px;
-        height: 50px;
-    }
-    header h1{
-        display: none;
-    }
-    .linDiv{
-        display: flex;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-        animation-name: linea_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes linea_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    /* termina estilo nav */
-
-    /* Comeinza estilo sección imagenes */
-    .imgSec{
-        grid-area: img;
-        padding: 0% 4%;
-    }
-    .imgDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    .iframe{
-        height: 95px;
-        width: 70%;
-        padding: 4% 0 1% 0;
-    }
-    /* Termina estilo sección imagenes */
-
-    /* Comienza estilo Tabla */
-    #secTab{
-        grid-template-areas: tabla;
-        display: flex;
-        align-self: center;
-        
-        justify-content: center;
-        font-size: 10px;
-    }
-    #tableSec{
-        display: flex;
-        justify-content: center;
-    }
-    /* Termina estilo Tabla */
-
-
-    /* Comienza estilo Media */
-    .secMedia{
-        grid-area: media;
-    }
-    .mediaSec{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .mediaVideo{
-        width: 80%;
-        height: 135px;
-        padding: 6px;
-    }
-    .mediaAudio{
-        width: 80%;
-        height: 80px;
-        padding: 6px;
-    }
-    /* Termina estilo Media */
-
-    /* Comienza estilo AboutUs */
-    #aboutSec{
-        grid-area: about;
-    }
-    .centerP{
-        padding: 0 40px;
-        font-size: 12px;
-    }
-    #mediaSecc2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .abImg{
-        width: 80%;
-        padding-top: 5px;
-        transition: width 1s;
-    }
-    .abImg:hover{
-        width: 85%;
-    }
-
-    #mediaSecc3{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 40px;
-    }
-    #tableSecc2{
-        font-size: 12px;
-        padding-bottom: 10px;
-    }
-    .mediaPortrait{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 10%;
-    }
-    
-    /* Termina estilo AboutUs */
-    
-    /* Comienza estilo de Forms */
-    #formSec{
-        grid-area: form;
-    }
-    #secForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 50px;
-    }
-    .textSub{
-        color: white;
-        background-color: black;
-        font-family: 'Anton', sans-serif;
-    }
-    /* Termina Estilo de Forms */
-
-
-    /* Comienza estilo footer */
-    footer{
-        grid-area: footer;
-    }
-    .footerDiv{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 10% 10px 10%;
-        animation-name: footer_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes footer_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    .logo{
-        height: 23px;
-    }
-    footer a{
-        color: white;
-        text-decoration: none;
-    }
-
-    /* Termina estilo footer */
-}
-
-
-
-
-
-
-
-/* Estilo Tablet */
-
-@media screen and (min-width:426px) and (max-width:768px){
- 
-    .body1{
-        background-image: url("../Img/BGMobile.png");
-        margin: 0px;
-        background-size: 100%;
-    }
-    .body2{
-        background-image: url("../Img/background2.jpg");
-        margin: 0px;
-        background-size: 200%;
-    }
-    #padreHome{
-        display: grid;
-        grid-template-areas: "header"
-                             "img"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 630px 48px;
-    }
-    #padreEvents{
-        display: grid;
-        grid-template-areas: "header"
-                             "tabla"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 350px 48px;
-    }
-    #padreMedia{
-        display: grid;
-        grid-template-areas: "header"
-                             "media"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 730px 48px;
-    }
-    #padreAbout{
-        display: grid;
-        grid-template-areas: "header"
-                             "about"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 1750px 48px;
-    }
-    #padreContact{
-        display: grid;
-        grid-template-areas: "header"
-                             "form"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 83px 350px 48px;
-    }
-
-    /* inicia estilo nav */
-    header{
-        grid-area: header;
-    }
-    .navbar{
-        grid-area: nav;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 80px 10px 80px;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
-    }
-    .navUl{
-        color:  white;
-        display: inline-block;
-    }
-    .navLi{
-        display: inline-block;
-        font-size: 2vw;
-    }
-    .navLi a{
-        color: white;
-        text-decoration: none;
-    }
-    .navLi a:Hover{
-        color: rgb(0, 183, 199);
-    }
-    .logo1{
-        padding-top: 6px;
-        width: 56px;
-        height: 50px;
-    }
-    header h1{
-        display: none;
-    }
-    .linDiv{
-        display: flex;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-        animation-name: linea_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes linea_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    /* termina estilo nav */
-
-    /* Comeinza estilo sección imagenes */
-    .imgSec{
-        grid-area: img;
-        padding: 0% 4%;
-    }
-    .imgDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    .iframe{
-        height: 150px;
-        width: 70%;
-        padding: 4% 0 1% 0;
-    }
-
-    /* Termina estilo sección imagenes */
-
-    /* Comienza estilo Tabla */
-    #secTab{
-        grid-template-areas: tabla;
-        display: flex;
-        align-self: center;
-        
-        justify-content: center;
-        font-size: 20px;
-    }
-    #tableSec{
-        display: flex;
-        justify-content: center;
-    }
-    /* Termina estilo Tabla */
-
-    /* Comienza estilo Media */
-    .secMedia{
-        grid-area: media;
-    }
-    .mediaSec{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .mediaVideo{
-        width: 80%;
-        height: 300px;
-        padding: 6px;
-    }
-    .mediaAudio{
-        width: 40%;
-        height: 80px;
-        padding: 6px;
-    }
-    /* Termina estilo Media */
-
-    /* Comienza estilo AboutUs */
-    #aboutSec{
-        grid-area: about;
-    }
-    .centerP{
-        padding: 0 40px;
-        font-size: 12px;
-    }
-    #mediaSecc2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .abImg{
-        width: 80%;
-        padding-top: 5px;
-        transition: width 1s;
-    }
-    .abImg:hover{
-        width: 85%;
-    }
-    #mediaSecc3{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 40px;
-    }
-    #tableSecc2{
-        display: flex;
-        font-size: 12px;
-        padding-bottom: 10px;
-    }
-    .mediaPortrait{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 10%;
-    }
-    
-    /* Termina estilo AboutUs */
-    
-    /* Comienza estilo de Forms */
-    #formSec{
-        grid-area: form;
-    }
-    #secForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .textSub{
-        color: white;
-        background-color: black;
-        font-family: 'Anton', sans-serif;
-    }
-    /* Termina Estilo de Forms */
-
-    /* Comienza estilo footer */
-    footer{
-        grid-area: footer;
-    }
-    .footerDiv{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 10% 10px 10%;
-        animation-name: footer_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes footer_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    .logo{
-        height: 23px;
-    }
-    footer a{
-        color: white;
-        text-decoration: none;
-    }
-
-    /* Termina estilo footer */
-}
-
-
-
-
-
-
-/* Estilo Laptop */
-
-@media screen and (min-width:769px) and (max-width: 1439px){
-    
-    .body1{
-        background-image: url("../Img/BGMobile.png");
-        margin: 0px;
-        background-size: 100%;
-    }
-    .body2{
-        background-image: url("../Img/background2.jpg");
-        margin: 0px;
-        background-size: 100%;
-    }
-    #padreHome{
-        display: grid;
-        grid-template-areas: "header"
-                             "img"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 115px 800px 48px;
-    }
-    #padreEvents{
-        display: grid;
-        grid-template-areas: "header"
-                             "tabla"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 115px 380px 48px;
-    }
-    #padreMedia{
-        display: grid;
-        grid-template-areas: "header"
-                             "media"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 115px 740px 48px;
-    }
-    #padreAbout{
-        display: grid;
-        grid-template-areas: "header"
-                             "about"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 115px 2000px 48px;
-    }
-    #padreContact{
-        display: grid;
-        grid-template-areas: "header"
-                             "form"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 115px 380px 48px;
-    }
-
-    /* inicia estilo nav */
-    header{
-        grid-area: header;
-    }
-    .navbar{
-        grid-area: nav;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1% 10% 10px 10%;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
-    }
-    .navUl{
-        color:  white;
-        display: inline-block;
-    }
-    .navLi{
-        display: inline-block;
-        font-size: 1.5vw;
-        padding-left: 8px;
-    }
-    .navLi a{
-        color: white;
-        text-decoration: none;
-    }
-    .navLi a:Hover{
-        color: rgb(0, 183, 199);
-    }
-    .logo1{
-        padding-top: 6px;
-        width: 8%;
-        height: 3.8%;
-    }
-    header h1{
-        font-size: 2vw;
-        text-align: center;
-        margin-top: -4%;
-        margin-bottom: 0;
-    }
-    .linDiv{
-        display: flex;
-        padding-top: 1%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-        animation-name: linea_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes linea_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    /* termina estilo nav */
-
-    /* Comeinza estilo sección imagenes */
-    .imgSec{
-        grid-area: img;
-        padding: 0% 4%;
-    }
-    .imgDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    .iframe{
-        height: 170px;
-        width: 70%;
-        padding: 4% 0 1% 0;
-    }
-    /* Termina estilo sección imagenes */
-
-    /* Comienza estilo Tabla */
-    #secTab{
-        grid-template-areas: tabla;
-        display: flex;
-        align-self: center;
-        
-        justify-content: center;
-        font-size: 25px;
-    }
-    #tableSec{
-        display: flex;
-        justify-content: center;
-    }
-    /* Termina estilo Tabla */
-
-    /* Comienza estilo Media */
-    .secMedia{
-        grid-area: media;
-    }
-    .mediaSec{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .mediaVideo{
-        width: 80%;
-        height: 300px;
-        padding: 6px;
-    }
-    .mediaAudio{
-        width: 40%;
-        height: 80px;
-        padding: 6px;
-    }
-    /* Termina estilo Media */
-
-    /* Comienza estilo AboutUs */
-    #aboutSec{
-        grid-area: about;
-    }
-    .centerP{
-        padding: 0 10%;
-        font-size: 12px;
-    }
-    #mediaSecc2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .abImg{
-        width: 80%;
-        padding-top: 5px;
-        transition: width 1s;
-    }
-    .abImg:hover{
-        width: 85%;
-    }
-    #mediaSecc3{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 40px;
-    }
-    #tableSecc2{
-        display: flex;
-        font-size: 12px;
-        padding-bottom: 10px;
-    }
-    .mediaPortrait{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 10%;
-    }
-    
-    /* Termina estilo AboutUs */
-    
-    /* Comienza estilo de Forms */
-    #formSec{
-        grid-area: form;
-    }
-    #secForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .textSub{
-        color: white;
-        background-color: black;
-        font-family: 'Anton', sans-serif;
-    }
-    /* Termina Estilo de Forms */
-
-    /* Comienza estilo footer */
-    footer{
-        grid-area: footer;
-    }
-    .footerDiv{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 10% 10px 10%;
-        animation-name: footer_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes footer_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    .logo{
-        height: 30px;
-    }
-    footer a{
-        color: white;
-        text-decoration: none;
-    }
-
-    /* Termina estilo footer */
-
-}
-
-
-
-
-
-
-/* Estilo Laptop grande */
-
-@media screen and (min-width:1440px) and (max-width: 2559px){
-    
-    .body1{
-        background-image: url("../Img/BGMobile.png");
-        margin: 0px;
-        background-size: 100%;
-    }
-    .body2{
-        background-image: url("../Img/background2.jpg");
-        margin: 0px;
-        background-size: 100%;
-    }
-    #padreHome{
-        display: grid;
-        grid-template-areas: "header"
-                             "img"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 12% 88% 48px;
-    }
-    #padreEvents{
-        display: grid;
-        grid-template-areas: "header"
-                             "tabla"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 125% 48px;
-    }
-    #padreMedia{
-        display: grid;
-        grid-template-areas: "header"
-                             "media"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 15% 85% 48px;
-    }
-    #padreAbout{
-        display: grid;
-        grid-template-areas: "header"
-                             "about"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 5% 95% 48px;
-    }
-    #padreContact{
-        display: grid;
-        grid-template-areas: "header"
-                             "form"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 96.5% 48px;
-    }
-
-    /* inicia estilo nav */
-    header{
-        grid-area: header;
-    }
-    .navbar{
-        grid-area: nav;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1% 10% 10px 10%;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
-    }
-    .navUl{
-        color:  white;
-        display: inline-block;
-    }
-    .navLi{
-        display: inline-block;
-        font-size: 1.5vw;
-        padding-left: 8px;
-    }
-    .navLi a{
-        color: white;
-        text-decoration: none;
-    }
-    .navLi a:Hover{
-        color: rgb(0, 183, 199);
-    }
-    .logo1{
-        padding-top: 6px;
-        width: 8%;
-        height: 3.8%;
-    }
-    header h1{
-        font-size: 2vw;
-        text-align: center;
-        margin-top: -4%;
-        margin-bottom: 0;
-    }
-    .linDiv{
-        display: flex;
-        padding-top: 1%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-        animation-name: linea_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes linea_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    /* termina estilo nav */
-
-    /* Comeinza estilo sección imagenes */
-    .imgSec{
-        grid-area: img;
-        padding: 0% 4%;
-    }
-    .imgDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    .iframe{
-        height: 160px;
-        width: 70%;
-        padding: 2% 0 1% 0;
-    }
-    /* Termina estilo sección imagenes */
-
-    /* Comienza estilo Tabla */
-    #secTab{
-        grid-template-areas: tabla;
-        display: flex;
-        align-self: center;
-        
-        justify-content: center;
-        font-size: 25px;
-    }
-    #tableSec{
-        display: flex;
-        justify-content: center;
-    }
-    /* Termina estilo Tabla */
-
-    /* Comienza estilo Media */
-    .secMedia{
-        grid-area: media;
-    }
-    .mediaSec{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .mediaVideo{
-        width: 80%;
-        height: 450px;
-        padding: 0 15px 60px 15px;
-    }
-    .mediaAudio{
-        width: 40%;
-        height: 80px;
-        padding: 0 15px 60px 0px;
-    }
-    /* Termina estilo Media */
-
-    /* Comienza estilo AboutUs */
-    #aboutSec{
-        grid-area: about;
-    }
-    .centerP{
-        padding: 0 8%;
-        font-size: 20px;
-    }
-    #mediaSecc2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .abImg{
-        width: 80%;
-        padding-top: 5px;
-        transition: width 1s;
-    }
-    .abImg:hover{
-        width: 85%;
-    }
-    #mediaSecc3{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 40px;
-    }
-    #tableSecc2{
-        display: flex;
-        font-size: 12px;
-        padding-bottom: 10px;
-    }
-    .mediaPortrait{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 10%;
-    }
-    
-    /* Termina estilo AboutUs */
-    
-    /* Comienza estilo de Forms */
-    #formSec{
-        grid-area: form;
-    }
-    #secForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 8%;
-    }
-    .textSub{
-        color: white;
-        background-color: black;
-        font-family: 'Anton', sans-serif;
-    }
-    /* Termina Estilo de Forms */
-
-    /* Comienza estilo footer */
-    footer{
-        grid-area: footer;
-    }
-    .footerDiv{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 10% 10px 10%;
-        animation-name: footer_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes footer_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    .logo{
-        height: 40px;
-        padding-top: 10px;
-        padding-right: 10px;
-    }
-    footer a{
-        color: white;
-        text-decoration: none;
-    }
-
-    /* Termina estilo footer */
-
-}
-
-
-
-
-
-
-
-/* Estilo Laptop 4k */
-
-@media screen and (min-width:2560px){
-    
-    .body1{
-        background-image: url("../Img/BGMobile.png");
-        margin: 0px;
-        background-size: 100%;
-    }
-    .body2{
-        background-image: url("../Img/background2.jpg");
-        margin: 0px;
-        background-size: 100%;
-    }
-    #padreHome{
-        display: grid;
-        grid-template-areas: "header"
-                             "img"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 260px 1900px 48px;
-    }
-    #padreEvents{
-        display: grid;
-        grid-template-areas: "header"
-                             "tabla"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 260px 1000px 48px;
-    }
-    #padreMedia{
-        display: grid;
-        grid-template-areas: "header"
-                             "media"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 260px 1850px 48px;
-    }
-    #padreAbout{
-        display: grid;
-        grid-template-areas: "header"
-                             "about"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 260px 3720px 48px;
-    }
-    #padreContact{
-        display: grid;
-        grid-template-areas: "header"
-                             "form"
-                             "footer";
-        grid-template-columns: 100%;
-        grid-template-rows: 260px 1000px 48px;
-    }
-
-    /* inicia estilo nav */
-    header{
-        grid-area: header;
-    }
-    .navbar{
-        grid-area: nav;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1% 10% 10px 10%;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
-    }
-    .navUl{
-        color:  white;
-        display: inline-block;
-    }
-    .navLi{
-        display: inline-block;
-        font-size: 1.5vw;
-        padding-left: 8px;
-    }
-    .navLi a{
-        color: white;
-        text-decoration: none;
-    }
-    .navLi a:Hover{
-        color: rgb(0, 183, 199);
-    }
-    .logo1{
-        padding-top: 6px;
-        width: 8%;
-        height: 3.8%;
-    }
-    header h1{
-        font-size: 2vw;
-        text-align: center;
-        margin-top: -4%;
-        margin-bottom: 0;
-    }
-    .linDiv{
-        display: flex;
-        padding-top: 1%;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 90%;
-        animation-name: linea_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes linea_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    /* termina estilo nav */
-
-    /* Comeinza estilo sección imagenes */
-    .imgSec{
-        grid-area: img;
-        padding: 0% 4%;
-    }
-    .imgDiv{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    .iframe{
-        height: 230px;
-        width: 70%;
-        padding: 4% 0 1% 0;
-    }
-    /* Termina estilo sección imagenes */
-
-    /* Comienza estilo Tabla */
-    #secTab{
-        grid-template-areas: tabla;
-        display: flex;
-        align-self: center;
-        
-        justify-content: center;
-        font-size: 30px;
-    }
-    #tableSec{
-        display: flex;
-        justify-content: center;
-    }
-    /* Termina estilo Tabla */
-
-    /* Comienza estilo Media */
-    .secMedia{
-        grid-area: media;
-    }
-    .mediaSec{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .mediaVideo{
-        width: 80%;
-        height: 800px;
-        padding: 0 15px 60px 15px;
-    }
-    .mediaAudio{
-        width: 40%;
-        height: 80px;
-        padding: 0 15px 60px 0px;
-    }
-    /* Termina estilo Media */
-
-    /* Comienza estilo AboutUs */
-    #aboutSec{
-        grid-area: about;
-    }
-    .centerP{
-        padding: 0 8%;
-        font-size: 25px;
-    }
-    #mediaSecc2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .abImg{
-        width: 80%;
-        padding-top: 5px;
-        transition: width 1s;
-    }
-    .abImg:hover{
-        width: 85%;
-    }
-    #mediaSecc3{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 40px;
-    }
-    #tableSecc2{
-        display: flex;
-        font-size: 12px;
-        padding-bottom: 10px;
-    }
-    .mediaPortrait{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 0 10%;
-    }
-    
-    /* Termina estilo AboutUs */
-    
-    /* Comienza estilo de Forms */
-    #formSec{
-        grid-area: form;
-    }
-    #secForm{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10%;
-    }
-    .textSub{
-        color: white;
-        background-color: black;
-        font-family: 'Anton', sans-serif;
-    }
-    /* Termina Estilo de Forms */
-
-
-    /* Comienza estilo footer */
-    footer{
-        grid-area: footer;
-    }
-    .footerDiv{
-        grid-area: footer;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 10% 10px 10%;
-        animation-name: footer_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes footer_en_movimiento{
-        0%   {left:-50px}
-        100% {left:0px}
-    }
-    .logo{
-        height: 60px;
-        padding-top: 10px;
-        padding-right: 10px;
-    }
-    footer a{
-        color: white;
-        text-decoration: none;
-    }
-
-    /* Termina estilo footer */
-
-}
+    font-family: 'Anton', sans-serif; }
+  .body1 {
+    background-image: url("../Img/BGMobile.png");
+    margin: 0px;
+    background-size: 100%; }
+  .body2 {
+    background-image: url("../Img/background2.jpg");
+    margin: 0px;
+    background-size: 300%; }
+  #padreHome {
+    display: grid;
+    grid-template-areas: "header" "img" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 470px 48px; }
+  #padreEvents {
+    display: grid;
+    grid-template-areas: "header" "tabla" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 470px 48px; }
+  #padreMedia {
+    display: grid;
+    grid-template-areas: "header" "media" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 490px 48px; }
+  #padreAbout {
+    display: grid;
+    grid-template-areas: "header" "about" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 1500px 48px; }
+  #padreContact {
+    display: grid;
+    grid-template-areas: "header" "form" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 470px 48px; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    color: white;
+    font-weight: lighter;
+    font-family: 'Anton', sans-serif; }
+  .body1 {
+    background-image: url("../Img/BGMobile.png");
+    margin: 0px;
+    background-size: 100%; }
+  .body2 {
+    background-image: url("../Img/background2.jpg");
+    margin: 0px;
+    background-size: 200%; }
+  #padreHome {
+    display: grid;
+    grid-template-areas: "header" "img" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 630px 48px; }
+  #padreEvents {
+    display: grid;
+    grid-template-areas: "header" "tabla" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 350px 48px; }
+  #padreMedia {
+    display: grid;
+    grid-template-areas: "header" "media" "footer";
+    grid-template-rows: 83px 730px 48px; }
+  #padreAbout {
+    display: grid;
+    grid-template-areas: "header" "about" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 1750px 48px; }
+  #padreContact {
+    display: grid;
+    grid-template-areas: "header" "form" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 83px 350px 48px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  body {
+    color: white;
+    font-weight: lighter;
+    font-family: 'Anton', sans-serif; }
+  .body1 {
+    background-image: url("../Img/BGMobile.png");
+    margin: 0px;
+    background-size: 100%; }
+  .body2 {
+    background-image: url("../Img/background2.jpg");
+    margin: 0px;
+    background-size: 100%; }
+  #padreHome {
+    display: grid;
+    grid-template-areas: "header" "img" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 115px 800px 48px; }
+  #padreEvents {
+    display: grid;
+    grid-template-areas: "header" "tabla" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 115px 380px 48px; }
+  #padreMedia {
+    display: grid;
+    grid-template-areas: "header" "media" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 115px 740px 48px; }
+  #padreAbout {
+    display: grid;
+    grid-template-areas: "header" "about" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 115px 2000px 48px; }
+  #padreContact {
+    display: grid;
+    grid-template-areas: "header" "form" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 115px 380px 48px; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  body {
+    color: white;
+    font-weight: lighter;
+    font-family: 'Anton', sans-serif; }
+  .body1 {
+    background-image: url("../Img/BGMobile.png");
+    margin: 0px;
+    background-size: 100%; }
+  .body2 {
+    background-image: url("../Img/background2.jpg");
+    margin: 0px;
+    background-size: 100%; }
+  #padreHome {
+    display: grid;
+    grid-template-areas: "header" "img" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 88% 48px; }
+  #padreEvents {
+    display: grid;
+    grid-template-areas: "header" "tabla" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 125% 48px; }
+  #padreMedia {
+    display: grid;
+    grid-template-areas: "header" "media" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85% 48px; }
+  #padreAbout {
+    display: grid;
+    grid-template-areas: "header" "about" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 95% 48px; }
+  #padreContact {
+    display: grid;
+    grid-template-areas: "header" "form" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 96.5% 48px; } }
+
+@media screen and (min-width: 2560px) {
+  body {
+    color: white;
+    font-weight: lighter;
+    font-family: 'Anton', sans-serif; }
+  .body1 {
+    background-image: url("../Img/BGMobile.png");
+    margin: 0px;
+    background-size: 100%; }
+  .body2 {
+    background-image: url("../Img/background2.jpg");
+    margin: 0px;
+    background-size: 100%; }
+  #padreHome {
+    display: grid;
+    grid-template-areas: "header" "img" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 260px 1900px 48px; }
+  #padreEvents {
+    display: grid;
+    grid-template-areas: "header" "tabla" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 260px 1000px 48px; }
+  #padreMedia {
+    display: grid;
+    grid-template-areas: "header" "media" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 260px 1850px 48px; }
+  #padreAbout {
+    display: grid;
+    grid-template-areas: "header" "about" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 260px 3720px 48px; }
+  #padreContact {
+    display: grid;
+    grid-template-areas: "header" "form" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 260px 1000px 48px; } }
+
+@media screen and (max-width: 426px) {
+  header {
+    grid-area: header; }
+    header h1 {
+      display: none; }
+  .navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 10px 20px;
+    animation-name: nav_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes nav_en_movimiento {
+    0% {
+      left: -20px;
+      top: -20px; }
+    100% {
+      left: 0px;
+      top: 0px; } }
+  .navUl {
+    color: white;
+    display: inline-block; }
+  .navLi {
+    display: inline-block;
+    font-size: 12px; }
+    .navLi a {
+      color: white;
+      text-decoration: none; }
+      .navLi a:hover {
+        color: #00b7c7; }
+  .logo1 {
+    padding-top: 6px;
+    width: 56px;
+    height: 50px; }
+  .linDiv {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    animation-name: linea_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes linea_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    grid-area: header; }
+    header h1 {
+      display: none; }
+  .navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px 10px 80px;
+    animation-name: nav_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes nav_en_movimiento {
+    0% {
+      left: -20px;
+      top: -20px; }
+    100% {
+      left: 0px;
+      top: 0px; } }
+  .navUl {
+    color: white;
+    display: inline-block; }
+  .navLi {
+    display: inline-block;
+    font-size: 2vw; }
+    .navLi a {
+      color: white;
+      text-decoration: none; }
+      .navLi a:hover {
+        color: #00b7c7; }
+  .logo1 {
+    padding-top: 6px;
+    width: 56px;
+    height: 50px; }
+  .linDiv {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    animation-name: linea_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes linea_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  header {
+    grid-area: header; }
+    header h1 {
+      font-size: 2vw;
+      text-align: center;
+      margin-top: -4%;
+      margin-bottom: 0; }
+  .navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10% 10px 10%;
+    animation-name: nav_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes nav_en_movimiento {
+    0% {
+      left: -20px;
+      top: -20px; }
+    100% {
+      left: 0px;
+      top: 0px; } }
+  .navUl {
+    color: white;
+    display: inline-block; }
+  .navLi {
+    display: inline-block;
+    font-size: 1.5vw;
+    padding-left: 8px; }
+    .navLi a {
+      color: white;
+      text-decoration: none; }
+      .navLi a:hover {
+        color: #00b7c7; }
+  .logo1 {
+    padding-top: 6px;
+    width: 8%;
+    height: 3.8%; }
+  .linDiv {
+    display: flex;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    animation-name: linea_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes linea_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  header {
+    grid-area: header; }
+    header h1 {
+      font-size: 2vw;
+      text-align: center;
+      margin-top: -4%;
+      margin-bottom: 0; }
+  .navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10% 10px 10%;
+    animation-name: nav_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes nav_en_movimiento {
+    0% {
+      left: -20px;
+      top: -20px; }
+    100% {
+      left: 0px;
+      top: 0px; } }
+  .navUl {
+    color: white;
+    display: inline-block; }
+  .navLi {
+    display: inline-block;
+    font-size: 1.5vw;
+    padding-left: 8px; }
+    .navLi a {
+      color: white;
+      text-decoration: none; }
+      .navLi a:hover {
+        color: #00b7c7; }
+  .logo1 {
+    padding-top: 6px;
+    width: 8%;
+    height: 3.8%; }
+  .linDiv {
+    display: flex;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    animation-name: linea_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes linea_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } } }
+
+@media screen and (min-width: 2560px) {
+  header {
+    grid-area: header; }
+    header h1 {
+      font-size: 2vw;
+      text-align: center;
+      margin-top: -4%;
+      margin-bottom: 0; }
+  .navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10% 10px 10%;
+    animation-name: nav_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes nav_en_movimiento {
+    0% {
+      left: -20px;
+      top: -20px; }
+    100% {
+      left: 0px;
+      top: 0px; } }
+  .navUl {
+    color: white;
+    display: inline-block; }
+  .navLi {
+    display: inline-block;
+    font-size: 1.5vw;
+    padding-left: 8px; }
+    .navLi a {
+      color: white;
+      text-decoration: none; }
+      .navLi a:hover {
+        color: #00b7c7; }
+  .logo1 {
+    padding-top: 6px;
+    width: 8%;
+    height: 3.8%; }
+  .linDiv {
+    display: flex;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    animation-name: linea_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes linea_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } } }
+
+@media screen and (max-width: 426px) {
+  .imgSec {
+    grid-area: img;
+    padding: 0% 4%; }
+  .imgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .iframe {
+    height: 95px;
+    width: 70%;
+    padding: 4% 0 1% 0; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .imgSec {
+    grid-area: img;
+    padding: 0% 4%; }
+  .imgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .iframe {
+    height: 150px;
+    width: 70%;
+    padding: 4% 0 1% 0; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .imgSec {
+    grid-area: img;
+    padding: 0% 4%; }
+  .imgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .iframe {
+    height: 170px;
+    width: 70%;
+    padding: 4% 0 1% 0; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .imgSec {
+    grid-area: img;
+    padding: 0% 4%; }
+  .imgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .iframe {
+    height: 160px;
+    width: 70%;
+    padding: 2% 0 1% 0; } }
+
+@media screen and (min-width: 2560px) {
+  .imgSec {
+    grid-area: img;
+    padding: 0% 4%; }
+  .imgDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .iframe {
+    height: 230px;
+    width: 70%;
+    padding: 4% 0 1% 0; } }
+
+@media screen and (max-width: 426px) {
+  #secTab {
+    grid-template-areas: tabla;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 10px; }
+  #tableSec {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #secTab {
+    grid-template-areas: tabla;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 20px; }
+  #tableSec {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  #secTab {
+    grid-template-areas: tabla;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 25px; }
+  #tableSec {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  #secTab {
+    grid-template-areas: tabla;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 25px; }
+  #tableSec {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (min-width: 2560px) {
+  #secTab {
+    grid-template-areas: tabla;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 30px; }
+  #tableSec {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (max-width: 426px) {
+  .secMedia {
+    grid-area: media; }
+  .mediaSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .mediaVideo {
+    width: 80%;
+    height: 135px;
+    padding: 6px; }
+  .mediaAudio {
+    width: 80%;
+    height: 80px;
+    padding: 6px; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .secMedia {
+    grid-area: media; }
+  .mediaSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .mediaVideo {
+    width: 80%;
+    height: 300px;
+    padding: 6px; }
+  .mediaAudio {
+    width: 40%;
+    height: 80px;
+    padding: 6px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .secMedia {
+    grid-area: media; }
+  .mediaSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .mediaVideo {
+    width: 80%;
+    height: 300px;
+    padding: 6px; }
+  .mediaAudio {
+    width: 40%;
+    height: 80px;
+    padding: 6px; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .secMedia {
+    grid-area: media; }
+  .mediaSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .mediaVideo {
+    width: 80%;
+    height: 450px;
+    padding: 0 15px 60px 15px; }
+  .mediaAudio {
+    width: 40%;
+    height: 80px;
+    padding: 0 15px 60px 0px; } }
+
+@media screen and (min-width: 2560px) {
+  .secMedia {
+    grid-area: media; }
+  .mediaSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .mediaVideo {
+    width: 80%;
+    height: 800px;
+    padding: 0 15px 60px 15px; }
+  .mediaAudio {
+    width: 40%;
+    height: 80px;
+    padding: 0 15px 60px 0px; } }
+
+@media screen and (max-width: 426px) {
+  #aboutSec {
+    grid-area: about; }
+  .centerP {
+    padding: 0 40px;
+    font-size: 12px; }
+  #mediaSecc2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .abImg {
+    width: 80%;
+    padding-top: 5px;
+    transition: width 1s; }
+    .abImg:hover {
+      width: 85%; }
+  #mediaSecc3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+  #tableSecc2 {
+    font-size: 12px;
+    padding-bottom: 10px; }
+  .mediaPortrait {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #aboutSec {
+    grid-area: about; }
+  .centerP {
+    padding: 0 40px;
+    font-size: 12px; }
+  #mediaSecc2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .abImg {
+    width: 80%;
+    padding-top: 5px;
+    transition: width 1s; }
+    .abImg:hover {
+      width: 85%; }
+  #mediaSecc3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+  #tableSecc2 {
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 10px; }
+  .mediaPortrait {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  #aboutSec {
+    grid-area: about; }
+  .centerP {
+    padding: 0 10%;
+    font-size: 12px; }
+  #mediaSecc2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .abImg {
+    width: 80%;
+    padding-top: 5px;
+    transition: width 1s; }
+    .abImg:hover {
+      width: 85%; }
+  #mediaSecc3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+  #tableSecc2 {
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 10px; }
+  .mediaPortrait {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  #aboutSec {
+    grid-area: about; }
+  .centerP {
+    padding: 0 8%;
+    font-size: 20px; }
+  #mediaSecc2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .abImg {
+    width: 80%;
+    padding-top: 5px;
+    transition: width 1s; }
+    .abImg:hover {
+      width: 85%; }
+  #mediaSecc3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+  #tableSecc2 {
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 10px; }
+  .mediaPortrait {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%; } }
+
+@media screen and (min-width: 2560px) {
+  #aboutSec {
+    grid-area: about; }
+  .centerP {
+    padding: 0 8%;
+    font-size: 25px; }
+  #mediaSecc2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .abImg {
+    width: 80%;
+    padding-top: 5px;
+    transition: width 1s; }
+    .abImg:hover {
+      width: 85%; }
+  #mediaSecc3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+  #tableSecc2 {
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 10px; }
+  .mediaPortrait {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10%; } }
+
+@media screen and (max-width: 426px) {
+  #formSec {
+    grid-area: form; }
+  #secForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; }
+  .textSub {
+    color: white;
+    background-color: black;
+    font-family: 'Anton', sans-serif; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #formSec {
+    grid-area: form; }
+  #secForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .textSub {
+    color: white;
+    background-color: black;
+    font-family: 'Anton', sans-serif; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  #formSec {
+    grid-area: form; }
+  #secForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .textSub {
+    color: white;
+    background-color: black;
+    font-family: 'Anton', sans-serif; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  #formSec {
+    grid-area: form; }
+  #secForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%; }
+  .textSub {
+    color: white;
+    background-color: black;
+    font-family: 'Anton', sans-serif; } }
+
+@media screen and (min-width: 2560px) {
+  #formSec {
+    grid-area: form; }
+  #secForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%; }
+  .textSub {
+    color: white;
+    background-color: black;
+    font-family: 'Anton', sans-serif; } }
+
+@media screen and (max-width: 426px) {
+  footer {
+    grid-area: footer; }
+    footer a {
+      color: white;
+      text-decoration: none; }
+  .footerDiv {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    animation-name: footer_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes footer_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } }
+  .logo {
+    height: 23px; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    grid-area: footer; }
+    footer a {
+      color: white;
+      text-decoration: none; }
+  .footerDiv {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    animation-name: footer_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes footer_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } }
+  .logo {
+    height: 23px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  footer {
+    grid-area: footer; }
+    footer a {
+      color: white;
+      text-decoration: none; }
+  .footerDiv {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    animation-name: footer_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes footer_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } }
+  .logo {
+    height: 30px; } }
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  footer {
+    grid-area: footer; }
+    footer a {
+      color: white;
+      text-decoration: none; }
+  .footerDiv {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    animation-name: footer_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes footer_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } }
+  .logo {
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 10px; } }
+
+@media screen and (min-width: 2560px) {
+  footer {
+    grid-area: footer; }
+    footer a {
+      color: white;
+      text-decoration: none; }
+  .footerDiv {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10% 10px 10%;
+    animation-name: footer_en_movimiento;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    position: relative; }
+  @keyframes footer_en_movimiento {
+    0% {
+      left: -50px; }
+    100% {
+      left: 0px; } }
+  .logo {
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 10px; } }

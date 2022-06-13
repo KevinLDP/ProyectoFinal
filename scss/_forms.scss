@@ -1,0 +1,88 @@
+//Celular
+@media screen and (max-width:426px){
+    #formSec{
+        grid-area: form;
+    }
+    #secForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .textSub{
+        color: white;
+        background-color: black;
+        font-family: 'Anton', sans-serif;
+    }
+}
+//Tablet
+@media screen and (min-width:426px) and (max-width:768px){
+    #formSec{
+        grid-area: form;
+    }
+    #secForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .textSub{
+        color: white;
+        background-color: black;
+        font-family: 'Anton', sans-serif;
+    }
+}
+//Laptop
+@media screen and (min-width:769px) and (max-width: 1439px){
+    #formSec{
+        grid-area: form;
+    }
+    #secForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .textSub{
+        color: white;
+        background-color: black;
+        font-family: 'Anton', sans-serif;
+    }
+}
+//Laptop Grande
+@media screen and (min-width:1440px) and (max-width: 2559px){
+    #formSec{
+        grid-area: form;
+    }
+    #secForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8%;
+    }
+    .textSub{
+        color: white;
+        background-color: black;
+        font-family: 'Anton', sans-serif;
+    }
+}
+//4k
+@media screen and (min-width:2560px){
+    #formSec{
+        grid-area: form;
+    }
+    #secForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+    }
+    .textSub{
+        color: white;
+        background-color: black;
+        font-family: 'Anton', sans-serif;
+    }
+}

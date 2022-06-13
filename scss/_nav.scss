@@ -1,0 +1,306 @@
+//Celular
+@media screen and (max-width:426px){
+    header{
+        grid-area: header;
+        h1{
+        display: none;
+        }
+    }
+    .navbar{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px 10px 20px;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
+    }
+    .navUl{
+        color:  white;
+        display: inline-block;
+    }
+    .navLi{
+        display: inline-block;
+        font-size: 12px;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                 color: rgb(0, 183, 199);
+            }
+        }
+    }
+    .logo1{
+        padding-top: 6px;
+        width: 56px;
+        height: 50px;
+    }
+    .linDiv{
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
+    }
+}
+//Tablet
+@media screen and (min-width:426px) and (max-width:768px){
+
+    header{
+        grid-area: header;
+        h1{
+            display: none;
+        }
+    }
+    .navbar{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 80px 10px 80px;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
+    }
+    .navUl{
+        color:  white;
+        display: inline-block;
+    }
+    .navLi{
+        display: inline-block;
+        font-size: 2vw;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: rgb(0, 183, 199);
+            }
+        }
+    }
+    .logo1{
+        padding-top: 6px;
+        width: 56px;
+        height: 50px;
+    }
+    .linDiv{
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
+    }
+}
+//Laptop
+@media screen and (min-width:769px) and (max-width: 1439px){
+    header{
+        grid-area: header;
+        h1{
+            font-size: 2vw;
+            text-align: center;
+            margin-top: -4%;
+            margin-bottom: 0;
+        }
+    }
+    .navbar{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 10% 10px 10%;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
+    }
+    .navUl{
+        color:  white;
+        display: inline-block;
+    }
+    .navLi{
+        display: inline-block;
+        font-size: 1.5vw;
+        padding-left: 8px;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: rgb(0, 183, 199);
+            }
+        }
+    }
+    .logo1{
+        padding-top: 6px;
+        width: 8%;
+        height: 3.8%;
+    }
+    .linDiv{
+        display: flex;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
+    }
+}
+//Laptop Grande
+@media screen and (min-width:1440px) and (max-width: 2559px){
+    header{
+        grid-area: header;
+        h1{
+            font-size: 2vw;
+            text-align: center;
+            margin-top: -4%;
+            margin-bottom: 0;
+        }
+    }
+    .navbar{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 10% 10px 10%;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
+    }
+    .navUl{
+        color:  white;
+        display: inline-block;
+    }
+    .navLi{
+        display: inline-block;
+        font-size: 1.5vw;
+        padding-left: 8px;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: rgb(0, 183, 199);
+            }
+        }
+    }
+    .logo1{
+        padding-top: 6px;
+        width: 8%;
+        height: 3.8%;
+    }
+    .linDiv{
+        display: flex;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
+    }
+}
+//4k
+@media screen and (min-width:2560px){
+    header{
+        grid-area: header;
+        h1{
+            font-size: 2vw;
+            text-align: center;
+            margin-top: -4%;
+            margin-bottom: 0;
+        }
+    }
+    .navbar{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 10% 10px 10%;
+        animation-name: nav_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes nav_en_movimiento{
+        0%   {left:-20px; top:-20px;}
+        100% {left:0px;top:0px;}
+    }
+    .navUl{
+        color:  white;
+        display: inline-block;
+    }
+    .navLi{
+        display: inline-block;
+        font-size: 1.5vw;
+        padding-left: 8px;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                color: rgb(0, 183, 199);
+            }
+        }
+
+    }
+    .logo1{
+        padding-top: 6px;
+        width: 8%;
+        height: 3.8%;
+    }
+    .linDiv{
+        display: flex;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        animation-name: linea_en_movimiento;
+        animation-duration: 1.2s;
+        animation-delay: 1.2s;
+        position: relative;
+    }
+    @keyframes linea_en_movimiento{
+        0%   {left:-50px}
+        100% {left:0px}
+    }
+}

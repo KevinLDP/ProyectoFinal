@@ -1,0 +1,239 @@
+//Celular
+@media screen and (max-width:426px){
+    body{
+        color: white;
+        font-weight: lighter;
+        font-family: 'Anton', sans-serif;
+    }
+    .body1{
+        background-image: url("../Img/BGMobile.png");
+        margin: 0px;
+        background-size: 100%;
+    }
+    .body2{
+        background-image: url("../Img/background2.jpg");
+        margin: 0px;
+        background-size: 300%;
+    }
+    #padreHome{
+        display: grid;
+        grid-template-areas: "header" "img" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 470px 48px;
+    }
+    #padreEvents{
+        display: grid;
+        grid-template-areas: "header" "tabla" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 470px 48px;
+    }
+    #padreMedia{
+        display: grid;
+        grid-template-areas: "header" "media" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 490px 48px;
+    }
+    #padreAbout{
+        display: grid;
+        grid-template-areas: "header" "about" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 1500px 48px;
+    }
+    #padreContact{
+        display: grid;
+        grid-template-areas: "header" "form" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 470px 48px;
+    }
+}
+//Tablet
+@media screen and (min-width:426px) and (max-width:768px){
+    body{
+        color: white;
+        font-weight: lighter;
+        font-family: 'Anton', sans-serif;
+    }
+    .body1{
+        background-image: url("../Img/BGMobile.png");
+        margin: 0px;
+        background-size: 100%;
+    }
+    .body2{
+        background-image: url("../Img/background2.jpg");
+        margin: 0px;
+        background-size: 200%;
+    }
+    #padreHome{
+        display: grid;
+        grid-template-areas: "header" "img" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 630px 48px;
+    }
+    #padreEvents{
+        display: grid;
+        grid-template-areas: "header" "tabla" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 350px 48px;
+    }
+    #padreMedia{
+        display: grid;
+        grid-template-areas: "header" "media" "footer";
+        grid-template-rows: 83px 730px 48px;
+    }
+    #padreAbout{
+        display: grid;
+        grid-template-areas: "header" "about" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 1750px 48px;
+    }
+    #padreContact{
+        display: grid;
+        grid-template-areas: "header" "form" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 83px 350px 48px;
+    }
+}
+//Laptop
+@media screen and (min-width:769px) and (max-width: 1439px){
+    body{
+        color: white;
+        font-weight: lighter;
+        font-family: 'Anton', sans-serif;
+    }
+    .body1{
+        background-image: url("../Img/BGMobile.png");
+        margin: 0px;
+        background-size: 100%;
+    }
+    .body2{
+        background-image: url("../Img/background2.jpg");
+        margin: 0px;
+        background-size: 100%;
+    }
+    #padreHome{
+        display: grid;
+        grid-template-areas: "header" "img" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 115px 800px 48px;
+    }
+    #padreEvents{
+        display: grid;
+        grid-template-areas: "header" "tabla" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 115px 380px 48px;
+    }
+    #padreMedia{
+        display: grid;
+        grid-template-areas: "header" "media" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 115px 740px 48px;
+    }
+    #padreAbout{
+        display: grid;
+        grid-template-areas: "header" "about" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 115px 2000px 48px;
+    }
+    #padreContact{
+        display: grid;
+        grid-template-areas: "header" "form" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 115px 380px 48px;
+    }
+}
+//Laptop grande
+@media screen and (min-width:1440px) and (max-width: 2559px){
+    body{
+        color: white;
+        font-weight: lighter;
+        font-family: 'Anton', sans-serif;
+    }
+    .body1{
+        background-image: url("../Img/BGMobile.png");
+        margin: 0px;
+        background-size: 100%;
+    }
+    .body2{
+        background-image: url("../Img/background2.jpg");
+        margin: 0px;
+        background-size: 100%;
+    }
+    #padreHome{
+        display: grid;
+        grid-template-areas: "header" "img" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 12% 88% 48px;
+    }
+    #padreEvents{
+        display: grid;
+        grid-template-areas: "header" "tabla" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 125% 48px;
+    }
+    #padreMedia{
+        display: grid;
+        grid-template-areas: "header" "media" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 85% 48px;
+    }
+    #padreAbout{
+        display: grid;
+        grid-template-areas: "header" "about" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 95% 48px;
+    }
+    #padreContact{
+        display: grid;
+        grid-template-areas: "header" "form" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 96.5% 48px;
+    }
+}
+//4k
+@media screen and (min-width:2560px){
+    body{
+        color: white;
+        font-weight: lighter;
+        font-family: 'Anton', sans-serif;
+    }
+    .body1{
+        background-image: url("../Img/BGMobile.png");
+        margin: 0px;
+        background-size: 100%;
+    }
+    .body2{
+        background-image: url("../Img/background2.jpg");
+        margin: 0px;
+        background-size: 100%;
+    }
+    #padreHome{
+        display: grid;
+        grid-template-areas: "header" "img" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 260px 1900px 48px;
+    }
+    #padreEvents{
+        display: grid;
+        grid-template-areas: "header" "tabla" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 260px 1000px 48px;
+    }
+    #padreMedia{
+        display: grid;
+        grid-template-areas: "header" "media" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 260px 1850px 48px;
+    }
+    #padreAbout{
+        display: grid;
+        grid-template-areas: "header" "about" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 260px 3720px 48px;
+    }
+    #padreContact{
+        display: grid;
+        grid-template-areas: "header" "form" "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 260px 1000px 48px;
+    }
+}

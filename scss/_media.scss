@@ -1,0 +1,105 @@
+//Celular
+@media screen and (max-width:426px){
+    .secMedia{
+        grid-area: media;
+    }
+    .mediaSec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mediaVideo{
+        width: 80%;
+        height: 135px;
+        padding: 6px;
+    }
+    .mediaAudio{
+        width: 80%;
+        height: 80px;
+        padding: 6px;
+    }
+}
+//Tablet
+@media screen and (min-width:426px) and (max-width:768px){
+    .secMedia{
+        grid-area: media;
+    }
+    .mediaSec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mediaVideo{
+        width: 80%;
+        height: 300px;
+        padding: 6px;
+    }
+    .mediaAudio{
+        width: 40%;
+        height: 80px;
+        padding: 6px;
+    }
+}
+//Laptop
+@media screen and (min-width:769px) and (max-width: 1439px){
+    .secMedia{
+        grid-area: media;
+    }
+    .mediaSec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mediaVideo{
+        width: 80%;
+        height: 300px;
+        padding: 6px;
+    }
+    .mediaAudio{
+        width: 40%;
+        height: 80px;
+        padding: 6px;
+    }
+}
+//Laptop Grande
+@media screen and (min-width:1440px) and (max-width: 2559px){
+    .secMedia{
+        grid-area: media;
+    }
+    .mediaSec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mediaVideo{
+        width: 80%;
+        height: 450px;
+        padding: 0 15px 60px 15px;
+    }
+    .mediaAudio{
+        width: 40%;
+        height: 80px;
+        padding: 0 15px 60px 0px;
+    }
+}
+//4k
+@media screen and (min-width:2560px){
+    .secMedia{
+        grid-area: media;
+    }
+    .mediaSec{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mediaVideo{
+        width: 80%;
+        height: 800px;
+        padding: 0 15px 60px 15px;
+    }
+    .mediaAudio{
+        width: 40%;
+        height: 80px;
+        padding: 0 15px 60px 0px;
+    }
+}

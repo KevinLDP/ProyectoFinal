@@ -1,0 +1,206 @@
+// Celular
+@media screen and (max-width:426px){
+    #aboutSec{
+        grid-area: about;
+    }
+    .centerP{
+        padding: 0 40px;
+        font-size: 12px;
+    }
+    #mediaSecc2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .abImg{
+        width: 80%;
+        padding-top: 5px;
+        transition: width 1s;
+        &:hover{
+            width: 85%;
+        }
+    }
+
+    #mediaSecc3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    #tableSecc2{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .mediaPortrait{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}
+
+ // Tablet
+@media screen and (min-width:426px) and (max-width:768px){
+    #aboutSec{
+        grid-area: about;
+    }
+    .centerP{
+        padding: 0 40px;
+        font-size: 12px;
+    }
+    #mediaSecc2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .abImg{
+        width: 80%;
+        padding-top: 5px;
+        transition: width 1s;
+        &:hover{
+            width: 85%;
+        }
+    }
+    #mediaSecc3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    #tableSecc2{
+        display: flex;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .mediaPortrait{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}
+// Laptop
+@media screen and (min-width:769px) and (max-width: 1439px){
+    #aboutSec{
+        grid-area: about;
+    }
+    .centerP{
+        padding: 0 10%;
+        font-size: 12px;
+    }
+    #mediaSecc2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .abImg{
+        width: 80%;
+        padding-top: 5px;
+        transition: width 1s;
+        &:hover{
+            width: 85%;
+        }
+    }
+    #mediaSecc3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    #tableSecc2{
+        display: flex;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .mediaPortrait{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}
+//Laptop Grande
+@media screen and (min-width:1440px) and (max-width: 2559px){
+    #aboutSec{
+        grid-area: about;
+    }
+    .centerP{
+        padding: 0 8%;
+        font-size: 20px;
+    }
+    #mediaSecc2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .abImg{
+        width: 80%;
+        padding-top: 5px;
+        transition: width 1s;
+        &:hover{
+            width: 85%;
+        }
+    }
+    #mediaSecc3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    #tableSecc2{
+        display: flex;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .mediaPortrait{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}
+//4k
+@media screen and (min-width:2560px){
+    #aboutSec{
+        grid-area: about;
+    }
+    .centerP{
+        padding: 0 8%;
+        font-size: 25px;
+    }
+    #mediaSecc2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .abImg{
+        width: 80%;
+        padding-top: 5px;
+        transition: width 1s;
+        &:hover{
+            width: 85%;
+        }
+    }
+    #mediaSecc3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    #tableSecc2{
+        display: flex;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .mediaPortrait{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}
