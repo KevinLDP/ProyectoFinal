@@ -1,11 +1,15 @@
+@mixin PSizes($padding, $font){
+    padding: 0 $padding;
+    font-size: $font;
+}
+
 // Celular
 @media screen and (max-width:426px){
     #aboutSec{
         grid-area: about;
     }
     .centerP{
-        padding: 0 40px;
-        font-size: 12px;
+        @include PSizes(40px, 12px);
     }
     #mediaSecc2{
         display: flex;
@@ -46,8 +50,7 @@
         grid-area: about;
     }
     .centerP{
-        padding: 0 40px;
-        font-size: 12px;
+        @include PSizes(40px, 12px);
     }
     #mediaSecc2{
         display: flex;
@@ -87,8 +90,7 @@
         grid-area: about;
     }
     .centerP{
-        padding: 0 10%;
-        font-size: 12px;
+        @include PSizes(10%, 14px);
     }
     #mediaSecc2{
         display: flex;
@@ -128,8 +130,7 @@
         grid-area: about;
     }
     .centerP{
-        padding: 0 8%;
-        font-size: 20px;
+        @include PSizes(8%, 20px);
     }
     #mediaSecc2{
         display: flex;
@@ -169,8 +170,7 @@
         grid-area: about;
     }
     .centerP{
-        padding: 0 8%;
-        font-size: 25px;
+        @include PSizes(8%, 25px);
     }
     #mediaSecc2{
         display: flex;
