@@ -13,14 +13,7 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
         display: flex;
         justify-content: space-between;
         padding: 5px 20px 10px 20px;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
+        
     }
     .navUl{
         color: map-get($FColors, 'C1');
@@ -64,6 +57,7 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
         grid-area: header;
         h1{
             display: none;
+            padding: 10px 80px 10px 80px;
         }
     }
     .navbar{
@@ -71,15 +65,7 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 80px 10px 80px;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
+        
     }
     .navUl{
         color: map-get($FColors, 'C1');
@@ -125,7 +111,7 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
             text-align: center;
             margin-top: -4%;
             margin-bottom: 0;
-        }
+            }
     }
     .navbar{
         grid-area: nav;
@@ -133,14 +119,6 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
         justify-content: space-between;
         align-items: center;
         padding: 1% 10% 10px 10%;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
     }
     .navUl{
         color: map-get($FColors, 'C1');
@@ -196,14 +174,6 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
         justify-content: space-between;
         align-items: center;
         padding: 1% 10% 10px 10%;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
     }
     .navUl{
         color: map-get($FColors, 'C1');
@@ -259,14 +229,6 @@ $FColors: ('C1': white, 'C2': rgb(0, 183, 199));
         justify-content: space-between;
         align-items: center;
         padding: 1% 10% 10px 10%;
-        animation-name: nav_en_movimiento;
-        animation-duration: 1.2s;
-        animation-delay: 1.2s;
-        position: relative;
-    }
-    @keyframes nav_en_movimiento{
-        0%   {left:-20px; top:-20px;}
-        100% {left:0px;top:0px;}
     }
     .navUl{
         color: map-get($FColors, 'C1');
